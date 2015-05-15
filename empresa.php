@@ -1,3 +1,19 @@
+<?php  
+$link = mysqli_connect('localhost','root','1234','inventario') or die('Ha fallado la conexión: '. mysqli_error($link)); 
+$query = 'SELECT * FROM inventario.empresa WHERE idempresa = 1' or die('Error en la consulta: '. mysqli_error($link)); 
+$result = $link->query($query); 
+while($row = mysqli_fetch_array($result)) { 
+  $_POST['nombreempresa'] = $row["nombreempresa"];
+  $_POST['giroempresa'] = $row["giroempresa"];
+  $_POST['direccionempresa'] = $row["direccionempresa"];
+  $_POST['ciudadempresa'] = $row["ciudadempresa"];
+  $_POST['estadoprovinciaempresa'] = $row["estadoprovinciaempresa"];
+  $_POST['paisempresa']= $row["paisempresa"];
+  $_POST['comentarioempresa'] = $row["comentarioempresa"];
+} 
+
+mysqli_close($link);
+?> 
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -52,25 +68,25 @@
 		<h1 id="titulo">Información de la empresa</h1>
 		<form action="">
 		Nombre:<br>
-		<input type="text" name="nombre" disabled>
+		<p><?php echo $_POST['nombreempresa'];?></p>
 		<br>
 		Giro:<br>
-		<input type="text" name="giro" disabled>
+		<p><?php echo $_POST['giroempresa'];?></p>
 		<br>
 		Direccion:<br>
-		<input type="text" name="direccion" disabled>
+		<p><?php echo $_POST['direccionempresa'];?></p>
 		<br>
 		Ciudad:<br>
-		<input type="text" name="ciudad" disabled>
+		<p><?php echo $_POST['ciudadempresa'];?></p>
 		<br>
 		Estado:<br>
-		<input type="text" name="estado" disabled>
+		<p><?php echo $_POST['estadoprovinciaempresa'];?></p>
 		<br>
 		Pais:<br>
-		<input type="text" name="pais" disabled>
+		<p><?php echo $_POST['paisempresa'];?></p>
 		<br>
 		Descripción:<br>
-		<input type="text" name="color" disabled>
+		<p><?php echo $_POST['comentarioempresa'];?></p>
 		<br><br>
 		</form>
 	</div>
@@ -79,27 +95,27 @@
 	<br><br />
 	<div>
 		<h1 id="titulo">Cambiar información de la empresa</h1>
-		<form action="">
+		<form name="formulario" method="post" action="actualizarempresa.php">
 		Nombre:<br>
-		<input type="text" name="nombre">
+		<input type="text" name="nombre" value="<?php echo $_POST['nombreempresa'];?>">
 		<br>
 		Giro:<br>
-		<input type="text" name="giro">
+		<input type="text" name="giro" value="<?php echo $_POST['giroempresa'];?>">
 		<br>
 		Direccion:<br>
-		<input type="text" name="direccion">
+		<input type="text" name="direccion" value="<?php echo $_POST['direccionempresa'];?>">
 		<br>
 		Ciudad:<br>
-		<input type="text" name="ciudad">
+		<input type="text" name="ciudad" value="<?php echo $_POST['ciudadempresa'];?>">
 		<br>
 		Estado:<br>
-		<input type="text" name="estado">
+		<input type="text" name="estado" value="<?php echo $_POST['estadoprovinciaempresa'];?>">
 		<br>
 		Pais:<br>
-		<input type="text" name="pais">
+		<input type="text" name="pais" value="<?php echo $_POST['paisempresa'];?>">
 		<br>
 		Descripción:<br>
-		<input type="text" name="color">
+		<input type="text" name="descripcion" value="<?php echo $_POST['comentarioempresa'];?>">
 		<br><br>
 		<input type="submit" value="Modificar" name="modificar">
 		<br><br>
