@@ -13,12 +13,6 @@
                 }, 1000);
             });
             
-            $("#bajas").click(function() {
-                $('html, body').animate({
-                    scrollTop: $("#b").offset().top
-                }, 1000);
-            });
-            
             $("#cambios").click(function() {
                 $('html, body').animate({
                     scrollTop: $("#c").offset().top
@@ -47,7 +41,6 @@
 		<li><a href="logout.php">Cerrar sesión</a></li>
 		<li><a id="inicio" href="index.php">Inicio</a></li>
 		<li><a id="busqueda" href="#Busqueda">Búsqueda</a></li>
-		<li><a id="bajas" href="#Bajas">Bajas</a></li>
 		<li><a id="cambios" href="#Cambios">Cambios</a></li>
 		<li><a id="altas" href="#Altas">Altas</a></li>
 		</ul>
@@ -78,19 +71,6 @@
 		<input type="date" name="fecha">
 		<br><br>
 		<input type="submit" value="Agregar" name="agregar">
-		</form>
-	</div>
-	
-	<a name="Bajas" id="b"></a>
-	<br><br />    
-	<div>
-		<h1 id="titulo">Eliminar registro</h1>
-		<p style="text-align: center">Introduzca el número del registro a eliminar.</p>
-		<form action="">
-		Número:<br>
-		<input type="text" name="numero">
-		<br><br>
-		<input type="submit" value="Eliminar" name="eliminar">
 		</form>
 	</div>
 	    
