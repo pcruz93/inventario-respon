@@ -21,6 +21,7 @@
 			<li><a id="registro" href="registro.php">Registros</a></li>
 			<li><a id="producto" href="producto.php">Productos</a></li>
 		</ul>
+        <div id="logo-menu" onClick="header('Location: index.php');";></div>
 	</div>
 	<div>
 		<h1 class="mensajeusuario"><?php echo 'Bienvenido '.$_SESSION['usuario'];?> </h1> 

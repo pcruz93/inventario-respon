@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 header('Content-Type: text/html; charset=UTF-8');
-$con=mysqli_connect('localhost','root','1234','inventario')or die ('Ha fallado la conexión: '.mysql_error());
+$con=mysqli_connect('localhost','root','','inventario')or die ('Ha fallado la conexión: '.mysql_error());
 $usuario = $_POST["user"];   
 $password = $_POST["pass"];
 $result = mysqli_query($con,"SELECT * FROM usuario WHERE aliasusuario = '$usuario'");

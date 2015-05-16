@@ -44,6 +44,7 @@
 		<li><a id="cambios" href="#Cambios">Cambios</a></li>
 		<li><a id="altas" href="#Altas">Altas</a></li>
 		</ul>
+        <div id="logo-menu" onClick="<?phpheader('Location: index.php');<?";></div>
 	</div>
 	<div>
 		<span>Registros</span>

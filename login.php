@@ -17,8 +17,8 @@
         <div id="logo"></div>
         <div class="logos">
           <form action="validar.php" method="POST" > 
-			<div class="logo1"></div><input type="text" name="user" required="required" placeHolder="Usuario"><br/>
-			<div class="logo2"></div><input type="password"  required="required" name="pass" placeholder="Contraseña"><br/>
+			<div class="logo" id="lg2"></div><input type="text" class="user-pass" name="user" required="required" placeHolder="Usuario"><br/>
+			<div class="logo" id="lg1"></div><input type="password"  class="user-pass" required="required" name="pass" placeholder="Contraseña"><br/>
 		    <input class="boton" type="submit" name="submit" value="Ingresar";>
 	      </form>
 		</div>

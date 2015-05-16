@@ -1,5 +1,5 @@
 <?php  
-$link = mysqli_connect('localhost','root','1234','inventario') or die('Ha fallado la conexión: '. mysqli_error($link)); 
+$link = mysqli_connect('localhost','root','','inventario') or die('Ha fallado la conexión: '. mysqli_error($link)); 
 $query = 'SELECT * FROM inventario.empresa WHERE idempresa = 1' or die('Error en la consulta: '. mysqli_error($link)); 
 $result = $link->query($query); 
 while($row = mysqli_fetch_array($result)) { 
