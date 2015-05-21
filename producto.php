@@ -51,6 +51,7 @@
 		<li><a id="cambios" href="#Cambios">Cambios</a></li>
 		<li><a id="altas" href="#Altas">Altas</a></li>
 		</ul>
+        <div class="logo"></div>
 	</div>
 	<div>
 		<span>Productos</span>

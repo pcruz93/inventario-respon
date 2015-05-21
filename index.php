@@ -16,17 +16,19 @@
 	<div class="header">
 		<ul id="menu">
 			<li><a href="logout.php">Cerrar sesión</a></li>
+            <li><a id="Generar reporte" href="reportes.php">Generar reporte</a></li>
 			<li><a id="empresa" href="empresa.php">Empresa</a></li>
 			<li><a id="usuario" href="usuario.php">Usuarios</a></li>
 			<li><a id="registro" href="registro.php">Registros</a></li>
 			<li><a id="producto" href="producto.php">Productos</a></li>
 		</ul>
-        <div id="logo-menu" onClick="header('Location: index.php');";></div>
+        <div class="logo"></div>
 	</div>
-	<div>
-		<h1 class="mensajeusuario"><?php echo 'Bienvenido '.$_SESSION['usuario'];?> </h1> 
-		<div  style="background-image: url('img/Pagina_en_mantenimiento.jpg'); width:460px; height:465px; repeat:fixed; position:absolute; top:20%;left: 50%;  margin-left: -200px; margin-top: 10px; position:absolute;">
-		</div>
-	</div>
+    <div id="fondo">
+        <div>
+            <h1 class="mensajeusuario"><?php echo 'Bienvenido '.$_SESSION['usuario'];?> </h1> 
+            <div  id="img-index"></div>
+        </div>
+    </div>
 </body>
 </html>

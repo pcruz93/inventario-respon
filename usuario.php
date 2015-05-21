@@ -44,13 +44,14 @@
 	}?>
 	<div class="header">
 		<ul id="menu">
-		<li><a href="logout.php">Cerrar sesión</a></li>
-		<li><a id="inicio" href="index.php">Inicio</a></li>
-		<li><a id="busqueda" href="#Busqueda">Búsqueda</a></li>
-		<li><a id="bajas" href="#Bajas">Bajas</a></li>
-		<li><a id="cambios" href="#Cambios">Cambios</a></li>
-		<li><a id="altas" href="#Altas">Altas</a></li>
+            <li><a href="logout.php">Cerrar sesión</a></li>
+            <li><a id="inicio" href="index.php">Inicio</a></li>
+            <li><a id="busqueda" href="#Busqueda">Búsqueda</a></li>
+            <li><a id="bajas" href="#Bajas">Bajas</a></li>
+            <li><a id="cambios" href="#Cambios">Cambios</a></li>
+            <li><a id="altas" href="#Altas">Altas</a></li>
 		</ul>
+        <div class="logo"></div>
 	</div>
 	<div>
 		<span>Usuarios</span>

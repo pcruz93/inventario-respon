@@ -8,11 +8,33 @@
 		 url('../fonts/GOTHIC.ttf') format('truetype'), 
 		 url('../fonts/GOTHIC.svg#CenturyGothic') format('svg');
 }
+@font-face { 
+	font-family: BebasNeue; 
+	src: url(../fonts/BebasNeue.eot) format('embedded-opentype'); 
+	src: url(../fonts/BebasNeue.eot?#iefix) format('embedded-opentype'), 
+		 url(../fonts/BebasNeue.woff2) format('woff2'), 
+		 url(../fonts/BebasNeue.woff) format('woff'), 
+		 url(../fonts/BebasNeue.otf) format('opentype'),
+		 url(../fonts/BebasNeue.ttf) format('truetype'), 
+		 url(../fonts/BebasNeue.svg#BebasNeue) format('svg');
+}
 
 body{
     font-family: 'Century_Gothic';
     margin: 0;
     padding: 0;
+    color: white;
+}
+input{
+    border-radius: 10px;
+    padding-left:10px;
+    outline: 0;
+}
+
+input:focus{
+    box-shadow: 0px 0px 11px 2px #1D9D59;
+    -moz-box-shadow: 0px 0px 11px 2px #1D9D59;
+    -webkit-box-shadow: 0px 0px 11px 2px #1D9D59;
 }
 .fondo{
     width: 100%;
@@ -24,14 +46,16 @@ body{
 }
 .logo{
     background-size: cover;
-    border-radius: 7px;
-    height: 25px;
-    width: 25px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    margin-left: 7px;
-    position: absolute;
+    /* border-radius: 7px; */
+    height: 47px;
+    width: 90px;
+    /* display: inline-block; */
+    /* background-repeat: no-repeat; */
+    /* margin-left: 7px; */
+    /* position: absolute; */
     margin-top: 3px;
+    margin-left: 10px;
+    background-image: url(../img/logo.fw.png);
 }
 #lg1{
     background-image: url(../img/password19.png);
@@ -76,6 +100,9 @@ body{
     padding-left: 33px;
     padding-top: 1px;
     width: 170px;
+     box-shadow: 0px 0px 11px 2px #1D9D59;
+    -moz-box-shadow: 0px 0px 11px 2px #1D9D59;
+    -webkit-box-shadow: 0px 0px 11px 2px #1D9D59;
 }
 #logo{
     background-image: url(../img/logo.fw.png);
@@ -91,6 +118,52 @@ body{
     list-style: none;
     float: right;
 }
+#fondo2{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/f.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#fondo{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/f.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+#img-index{
+    background-image: url('../img/Pagina_en_mantenimiento.fw.png');
+    width:460px; 
+    height:465px;
+    top:20%;    
+    left: 50%; 
+    margin-left: -200px; 
+    margin-top: 10px;
+    position:absolute;
+}
+#img-reporte{
+    background-image: url(../img/icono.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -100px;
+    cursor: pointer;
+    border-radius: 30px; 
+    text-align: center;
+    line-height: 28;
+}
+#img-reporte:hover{
+    box-shadow: 0px 1px 0px blue;
+    -moz-box-shadow: 0px 1px 0px blue;
+    -webkit-box-shadow: 2px 2px 2px 2px white;
+}   
 #titulo{
 	font-size: 200%;
 	text-align: center;
@@ -104,6 +177,8 @@ a, li{
     display: inline-block;
     padding-right: 20px;
     text-decoration: none;
+    font-family: BebasNeue;
+    font-size: 15pt;
 }
 a:hover{
     color: white;
@@ -123,20 +198,24 @@ form{
 .header{
     width: 100%;
     height: 55px;
-    background-image: url(../img/head.jpg);
+    /*background-image: url(../img/head.jpg);*/
+    background-color: #1D9D59;
     background-position: center;
     background-size: contain;
     position: fixed;
     z-index: 2;
 }
+#reporte-titulo{
+  line-height: 8;
+  display: inline-block;
+  position: relative;
+  margin-left: 521px;
+}
 	
 	h2 {font-size:36px;margin:0 0 10px 0}
-	p {margin:0 0 10px 0}
-	
-	
-			
+	p {margin:0 0 10px 0}	
 	table.width200,table.rwd_auto {border:1px solid #ccc;width:100%;margin:0 0 50px 0}
-		.width200 th,.rwd_auto th {background:#ccc;padding:5px;text-align:center;}
+		.width200 th,.rwd_auto th {background:#1D9D59;padding:5px;text-align:center;}
 		.width200 td,.rwd_auto td {border-bottom:1px solid #ccc;padding:5px;text-align:center}
 		.width200 tr:last-child td, .rwd_auto tr:last-child td{border:0}
 		
@@ -195,7 +274,7 @@ form{
 	/* iPads (portrait and landscape) ----------- */
 	@media only screen and (min-width: 768px) and (max-width: 1024px) 
 	{
-		body { width: 495px; }
+		body { width: 100%; }
 		.descarto {display:none;}
 		.fontsize {font-size:10px}
 	}
