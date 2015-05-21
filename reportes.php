@@ -18,7 +18,7 @@
 			<li><a href="logout.php">Cerrar sesión</a></li>
 			<li><a id="producto" href="index.php">Inicio</a></li>
 		</ul>
-        <div class="logo"></div>
+        <div id="logo"></div>
 	</div>
     <div id="fondo">
         <div>

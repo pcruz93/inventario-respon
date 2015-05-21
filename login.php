@@ -15,7 +15,7 @@
 <body>
     <div class="fondo"></div>
    <div class="formulario">
-        <div id="logo"></div>
+        <div id="logo-login"></div>
         <div class="logos">
           <form action="validar.php" method="POST" > 
 			<div class="logo" id="lg2"></div><input type="text" class="user-pass" name="user" required="required" placeHolder="Usuario"><br/>

@@ -22,7 +22,7 @@
 			<li><a id="registro" href="registro.php">Registros</a></li>
 			<li><a id="producto" href="producto.php">Productos</a></li>
 		</ul>
-        <div class="logo"></div>
+        <div id="logo"></div>
 	</div>
     <div id="fondo">
         <div>

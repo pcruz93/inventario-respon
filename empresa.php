@@ -53,7 +53,7 @@ mysqli_close($link);
 		<li><a id="modificacion" href="#Modificacion">Modificación</a></li>
 		<li><a id="informacion" href="#Información">Información</a></li>
 		</ul>
-        <div class="logo"></div>
+        <div id="logo"></div>
 	</div>
 	<div>
 		<span>Empresas</span>
