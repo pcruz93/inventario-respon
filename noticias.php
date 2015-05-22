@@ -4,7 +4,6 @@ $bd_usuario = "root";
 $bd_password = ""; 
 $bd_base = "inventario"; 
 $con = mysqli_connect($bd_host, $bd_usuario, $bd_password,$bd_base); 
-$q=$_POST['q'];
 //$sql="select * from registro where idregistro LIKE '".$q."%'";
 $sql="select p.idproducto,p.nombreproducto,p.cantidadproducto,p.codigoproducto from registro r, producto p, registroproducto rp 
 where p.codigoproducto LIKE '".$q."%' group by p.codigoproducto" ;

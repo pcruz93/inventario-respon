@@ -39,6 +39,7 @@ mysqli_close($link);
     </script>
 	</head>
 <body>
+    <div id="fondo2">
 	<?php
 	session_start();
 	if(!isset($_SESSION['usuario'])) 
@@ -122,5 +123,6 @@ mysqli_close($link);
 		<br><br>
 		</form>
 	</div>
+    </div>
 </body>
 </html>

@@ -4,7 +4,6 @@
 		var cantidad = $("input#cantidad").val();
 		var codigoproducto = $("input#codigoproducto").val();
 		var fecha= $("input#fecha").val();
-    
 		var dataString = 'razon=' + razon + '&cantidad=' + cantidad +'&codigoproducto=' + codigoproducto+'&fecha='+fecha;
 		$.ajax({
 			type: "POST",

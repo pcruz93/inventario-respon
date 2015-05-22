@@ -149,14 +149,22 @@ input:focus{
     background-image: url(../img/logo.fw.png)
 }
 #img-index{
-    background-image: url('../img/Pagina_en_mantenimiento.fw.png');
-    width:460px; 
-    height:465px;
-    top:20%;    
-    left: 50%; 
-    margin-left: -200px; 
-    margin-top: 10px;
-    position:absolute;
+  width: 460px;
+  height: 465px;
+  top: 20%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: 10px;
+  position: absolute;
+  background-color: #6a8a6e;
+  border-radius: 10px;
+  box-shadow: whitesmoke;
+  /* -webkit-box-shadow: 22px 13px 32px -6px rgba(244,247,247,0.72); */
+  -moz-box-shadow: 22px 13px 32px -6px rgba(244,247,247,0.72);
+  /* box-shadow: 22px 13px 32px -6px rgba(244,247,247,0.72); */
+  -webkit-box-shadow: 22px 20px 32px -6px rgba(244,247,247,0.72);
+  -moz-box-shadow: 22px 20px 32px -6px rgba(244,247,247,0.72);
+  box-shadow: 22px 20px 32px -6px rgba(244,247,247,0.72);
 }
 #img-reporte{
     background-image: url(../img/icono.jpg);

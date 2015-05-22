@@ -6,7 +6,7 @@
     $bd_password = ""; 
     $bd_base = "inventario"; 
     $con = mysqli_connect($bd_host, $bd_usuario, $bd_password,$bd_base); 
-    $titulo='<h4>Reporte realziado</h4>';
+    $titulo='<h5>Reporte realziado</h5>';
     $time = time();
     $codigoHTML=$titulo.date("d-m-Y (H:i:s)", $time);
     $codigoHTML.='
@@ -16,7 +16,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>GeneraReporte</title>
 </head>
-<body>
+<body >
 <div align="center">
     <h1 style="color:green">Soccer Zone</h1>
     <h2>Informe de productos</h2>
@@ -24,15 +24,15 @@
     
     <table width="100%" border="2">
       <tr>
-        <td bgcolor="#1D9D59"><strong>Id registro</strong></td>
-        <td bgcolor="#1D9D59"><strong>Id producto</strong></td>
-        <td bgcolor="#1D9D59"><strong>Nombre del producto</strong></td>
-        <td bgcolor="#1D9D59"><strong>Cantidad</strong></td>
-        <td bgcolor="#1D9D59"><strong>Codigo del producto</strong></td>
-        <td bgcolor="#1D9D59"><strong>Fecha</strong></td>
+        <td bgcolor="#CCC"><strong>Id registro</strong></td>
+        <td bgcolor="#CCC"><strong>Id producto</strong></td>
+        <td bgcolor="#CCC"><strong>Nombre del producto</strong></td>
+        <td bgcolor="#CCC"><strong>Cantidad</strong></td>
+        <td bgcolor="#CCC"><strong>Codigo del producto</strong></td>
+        <td bgcolor="#CCC"><strong>Tipo de producto</strong></td>
       </tr>';
         
-        $sql="select r.idregistro,p.idproducto,p.nombreproducto,p.cantidadproducto,p.codigoproducto,r.fecha from registro r, producto p, registroproducto rp where r.idregistro=rp.registro_idregistro and p.idproducto=rp.producto_idproducto and p.codigoproducto";
+        $sql="select r.idregistro,p.idproducto,p.nombreproducto,p.cantidadproducto,p.codigoproducto,p.tipoproducto from registro r, producto p, registroproducto rp where r.idregistro=rp.registro_idregistro and p.idproducto=rp.producto_idproducto and p.codigoproducto";
         $res=mysqli_query($con,$sql);
         while($fila=mysqli_fetch_array($res)){
 $codigoHTML.='
@@ -42,7 +42,7 @@ $codigoHTML.='
         <td> '.$fila["nombreproducto"].'</td>
         <td> '.$fila["cantidadproducto"].'</td>
         <td> '.$fila["codigoproducto"].'</td>
-        <td> '.$fila["fecha"].'</td>
+        <td> '.$fila["tipoproducto"].'</td>
       </tr>';
       } 
 $codigoHTML.='

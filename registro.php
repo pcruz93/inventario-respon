@@ -56,7 +56,6 @@ $con=conectar();
 				<a name="Altas" id="a"></a>
 				<br><br />
 				<div>
-
 					<h1 id="titulo">Agregar registro</h1>
 					<form action="" method="post" >
 					Razon:<br>
